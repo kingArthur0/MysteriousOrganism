@@ -3,7 +3,7 @@
 const returnRandBase = () => {
     const dnaBases = ['A', 'T', 'C', 'G']
     return dnaBases[Math.floor(Math.random() * 4)] 
-  }
+}
   
   // Returns a random single stand of DNA containing 15 bases
 const mockUpStrand = () => {
@@ -12,7 +12,7 @@ const mockUpStrand = () => {
       newStrand.push(returnRandBase())
     }
     return newStrand
-  }
+}
 
 const pAequorFactory = (specimenNum) => {
 
@@ -94,9 +94,11 @@ const pAequorFactory = (specimenNum) => {
         }
         
         })
-    }
+}
 
-  
+
+const MakeStudyArray = () =>{
+
 let arrayToStudy=[]
 
 let x=1 
@@ -108,9 +110,13 @@ while(x<=30){
     }
 }
 
+return arrayToStudy
+
+}
+  
 
 
 
-console.log(arrayToStudy)
 
-console.log(arrayToStudy[29].willLikelySurvive())
+console.log(MakeStudyArray())
+
